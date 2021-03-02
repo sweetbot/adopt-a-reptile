@@ -16,17 +16,16 @@
 
 package com.example.androiddevchallenge.ui.theme
 
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Shapes
-import androidx.compose.ui.unit.dp
+import androidx.annotation.DrawableRes
+import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.staticCompositionLocalOf
 
-val shapes = Shapes(
-    small = RoundedCornerShape(percent = 50),
-    medium = RoundedCornerShape(size = 0f),
-    large = RoundedCornerShape(
-        topStart = 16.dp,
-        topEnd = 0.dp,
-        bottomEnd = 0.dp,
-        bottomStart = 16.dp
-    )
-)
+/**
+ * Images that can vary by theme.
+ */
+@Immutable
+data class Images(@DrawableRes val lockupLogo: Int)
+
+internal val LocalImages = staticCompositionLocalOf<Images> {
+    error("No LocalImages specified")
+}
