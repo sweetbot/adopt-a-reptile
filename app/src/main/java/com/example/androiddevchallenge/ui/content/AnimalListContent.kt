@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.ui.content
 
 import androidx.compose.foundation.clickable
@@ -8,7 +23,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Icon
-import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.compose.material.LocalElevationOverlay
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -24,10 +38,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.constraintlayout.compose.ConstraintLayout
 import com.example.androiddevchallenge.data.AnimalItem
+import com.example.androiddevchallenge.data.animalItems
 import com.example.androiddevchallenge.ui.theme.BlueTheme
 import com.example.androiddevchallenge.ui.theme.MainTheme
-import com.example.androiddevchallenge.data.animalItems
 import com.example.androiddevchallenge.utils.NetworkImage
 import dev.chrisbanes.accompanist.insets.statusBarsPadding
 import kotlin.math.ceil
@@ -207,7 +222,6 @@ private fun shortestColumn(colHeights: IntArray): Int {
     }
     return column
 }
-
 
 @Preview(name = "Animals Portrait")
 @Composable

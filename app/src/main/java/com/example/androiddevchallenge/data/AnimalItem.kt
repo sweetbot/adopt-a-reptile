@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.data
 
 import androidx.compose.runtime.Immutable
@@ -48,7 +63,7 @@ val animalItems = listOf(
         category = "\uD83D\uDC22",
         thumbUrl = "https://images.swns.com/wp-content/uploads/2015/06/SWNS_TORTOISE_WHEELS_02.jpg",
         thumbContentDesc = "This is Touche, and his new set of wheels. The disabled tortoise has been fitted with the wheels from a Hotwheels toy car to help him scoot around after he lost a leg.\n" +
-                "Eight-year-old Touche had a back leg amputated after an accident at home last week which left him limping. But a creative vet at Highcroft Vetinary Hospital in Whitchurch, Bristol decided to use a special resin and fix the base of a little toy car to the underside of Touche’s shell to help him get back to his old self. The surgery took an hour and a half to complete and was a complete success, with little Touche seemingly un-phased by his new prosthetic.",
+            "Eight-year-old Touche had a back leg amputated after an accident at home last week which left him limping. But a creative vet at Highcroft Vetinary Hospital in Whitchurch, Bristol decided to use a special resin and fix the base of a little toy car to the underside of Touche’s shell to help him get back to his old self. The surgery took an hour and a half to complete and was a complete success, with little Touche seemingly un-phased by his new prosthetic.",
         email = "fancygiantcroissant@gmail.com",
         likes = 218,
         like = 1
@@ -79,13 +94,13 @@ val animalItems = listOf(
         category = "\uD83D\uDC0A",
         thumbUrl = "https://oddlycutepets.com/wp-content/uploads/2019/08/canva-photo-editor-8-1024x768.png",
         thumbContentDesc = "These gentle beasts are from Australia but are now readily\n" +
-                "available due to their willingness to breed in captivity.\n" +
-                "Bearded Dragons make a wonderful pet for both beginners\n" +
-                "and advanced reptile keepers. Due to their docile nature and\n" +
-                "relative small size (usually 16-20 inches) they have become\n" +
-                "quite popular in recent years. These beautiful creatures are\n" +
-                "highly recommended for families with small children also due\n" +
-                "to their seeming love for attention.",
+            "available due to their willingness to breed in captivity.\n" +
+            "Bearded Dragons make a wonderful pet for both beginners\n" +
+            "and advanced reptile keepers. Due to their docile nature and\n" +
+            "relative small size (usually 16-20 inches) they have become\n" +
+            "quite popular in recent years. These beautiful creatures are\n" +
+            "highly recommended for families with small children also due\n" +
+            "to their seeming love for attention.",
         email = "fancygiantcroissant@gmail.com",
         likes = 14,
         like = 1
@@ -106,8 +121,8 @@ val animalItems = listOf(
         category = "\uD83D\uDC0A",
         thumbUrl = "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fdehayf5mhw1h7.cloudfront.net%2Fwp-content%2Fuploads%2Fsites%2F86%2F2017%2F03%2F09170810%2F3DE84C2400000578-4278440-image-a-176_1488546559349.jpg&f=1&nofb=1",
         thumbContentDesc = "The first thing that is important to do if you are considering keeping an alligator as a pet is to contact your state’s wildlife authority to find out whether or not you can do so legally in that specific area.  It is forbidden to own a pet alligator in most jurisdictions, and exotic pet permits are often only granted to experience reptile handlers that have existing facilities to keep the creatures in.\n" +
-                "\n" +
-                "If you are granted permission to keep an alligator legally, the next most important thing is to design a proper enclosure for the animal that will not only keep it from escaping, but will also prohibit entry to intruders.  The enclosure should also be sturdy enough to resist damage, as alligators are giant, powerful and aggressive.",
+            "\n" +
+            "If you are granted permission to keep an alligator legally, the next most important thing is to design a proper enclosure for the animal that will not only keep it from escaping, but will also prohibit entry to intruders.  The enclosure should also be sturdy enough to resist damage, as alligators are giant, powerful and aggressive.",
         email = "fancygiantcroissant@gmail.com",
         likes = 22,
         like = 1
