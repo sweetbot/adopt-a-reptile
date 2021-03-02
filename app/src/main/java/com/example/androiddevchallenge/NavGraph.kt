@@ -11,7 +11,6 @@ import androidx.navigation.compose.navigate
 import androidx.navigation.compose.rememberNavController
 import com.example.androiddevchallenge.MainDestinations.ANIMAL_DETAIL_ID_KEY
 import com.example.androiddevchallenge.ui.content.AnimalDetailContent
-import com.example.androiddevchallenge.ui.content.AnimalListContent
 import com.example.androiddevchallenge.ui.content.HomeScreenContent
 
 /**

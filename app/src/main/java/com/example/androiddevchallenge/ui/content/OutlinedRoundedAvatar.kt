@@ -1,5 +1,4 @@
-package com.example.androiddevchallenge.ui.common
-
+package com.example.androiddevchallenge.ui.content
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -18,7 +17,7 @@ import com.example.androiddevchallenge.ui.theme.BlueTheme
 import com.example.androiddevchallenge.utils.NetworkImage
 
 @Composable
-fun OutlinedAvatar(
+fun OutlinedRoundedAvatar(
     url: String,
     modifier: Modifier = Modifier,
     outlineSize: Dp = 3.dp,
@@ -49,6 +48,6 @@ fun OutlinedAvatar(
 @Composable
 private fun OutlinedAvatarPreview() {
     BlueTheme {
-        OutlinedAvatar(url = "")
+        OutlinedRoundedAvatar(url = "")
     }
 }

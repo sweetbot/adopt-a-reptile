@@ -27,7 +27,6 @@ import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.data.AnimalItem
 import com.example.androiddevchallenge.ui.theme.BlueTheme
 import com.example.androiddevchallenge.ui.theme.MainTheme
-import com.example.androiddevchallenge.ui.common.OutlinedAvatar
 import com.example.androiddevchallenge.data.animalItems
 import com.example.androiddevchallenge.utils.NetworkImage
 import dev.chrisbanes.accompanist.insets.statusBarsPadding
@@ -91,7 +90,7 @@ fun AnimalContent(
                 color = MaterialTheme.colors.surface,
                 elevation = MainTheme.elevations.card
             ) ?: MaterialTheme.colors.surface
-            OutlinedAvatar(
+            OutlinedRoundedAvatar(
                 url = animal.owner,
                 outlineColor = outlineColor,
                 modifier = Modifier

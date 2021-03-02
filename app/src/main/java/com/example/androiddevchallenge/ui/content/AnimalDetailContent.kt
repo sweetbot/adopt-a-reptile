@@ -2,7 +2,18 @@ package com.example.androiddevchallenge.ui.content
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.gestures.Orientation.Vertical
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.LazyRow
@@ -41,11 +52,11 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.androiddevchallenge.R
+import com.example.androiddevchallenge.data.AnimalItem
+import com.example.androiddevchallenge.data.AnimalItemRepository
+import com.example.androiddevchallenge.data.animalItems
 import com.example.androiddevchallenge.ui.common.AnimalListItem
-import com.example.androiddevchallenge.ui.common.OutlinedAvatar
-import com.example.androiddevchallenge.data.*
 import com.example.androiddevchallenge.ui.theme.PinkTheme
-import com.example.androiddevchallenge.ui.theme.BlueTheme
 import com.example.androiddevchallenge.utils.NetworkImage
 import com.example.androiddevchallenge.utils.backHandler
 import com.example.androiddevchallenge.utils.scrim
@@ -54,7 +65,6 @@ import dev.chrisbanes.accompanist.insets.statusBarsPadding
 import kotlinx.coroutines.launch
 
 private val FabSize = 56.dp
-private const val ExpandedSheetAlpha = 0.96f
 
 @Composable
 fun AnimalDetailContent(
@@ -76,7 +86,7 @@ fun ItemDetail(
     upPress: () -> Unit
 ) {
     PinkTheme {
-        BoxWithConstraints {
+        BoxWithConstraints{
             val sheetState = rememberSwipeableState(SheetState.Closed)
             val fabSize = with(LocalDensity.current) { FabSize.toPx() }
             val dragRange = constraints.maxHeight - fabSize
@@ -166,7 +176,7 @@ private fun ItemDescriptionHeader(
             )
             Spacer(modifier = Modifier.weight(1f))
         }
-        OutlinedAvatar(
+        OutlinedRoundedAvatar(
             url = item.owner,
             modifier = Modifier
                 .size(40.dp)
@@ -263,7 +273,7 @@ private fun RelatedItemsContent(
     selectAnimal: (Long) -> Unit
 ) {
     val relatedItems = remember(itemId) { AnimalItemRepository.getRelated(itemId) }
-    BlueTheme {
+    PinkTheme {
         Surface(
             color = MaterialTheme.colors.primarySurface,
             modifier = Modifier.fillMaxWidth()
